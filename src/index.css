@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Archivo Black", sans-serif;
+}
+
+@layer base {
+  :root {
+    --primary: #FF6B00;
+    --primary-rgb: 255, 107, 0;
+    --radius: 12px;
+    --bg-base: #FFFFFF;
+    --text-base: #0F172A;
+    --text-muted: #64748B;
+    --card-bg: #FFFFFF;
+    --card-shadow: 0 4px 20px -2px rgba(0,0,0,0.05);
+  }
+
+  [data-theme='fast-food'] {
+    --primary: #FF4D00; /* Darker, vibrant orange */
+    --primary-rgb: 255, 77, 0;
+    --radius: 8px;
+    --bg-base: #050505;
+    --text-base: #FFFFFF;
+    --text-muted: #A1A1AA;
+    --card-bg: #121212;
+    --card-shadow: 0 0 0 1px rgba(255,255,255,0.05), 0 10px 30px -10px rgba(0,0,0,0.5);
+  }
+
+  [data-theme='restaurant'] {
+    --primary: #4A4A35;
+    --primary-rgb: 74, 74, 53;
+    --radius: 0px;
+    --bg-base: #F9F7F2;
+    --text-base: #121212;
+    --text-muted: #71717A;
+    --card-bg: transparent;
+    --card-shadow: none;
+  }
+
+  [data-theme='night'] {
+    --primary: #A855F7; /* Electric Violet */
+    --primary-rgb: 168, 85, 247;
+    --radius: 24px;
+    --bg-base: #020617;
+    --text-base: #F8FAFC;
+    --text-muted: #94A3B8;
+    --card-bg: rgba(30, 41, 59, 0.4);
+    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-base);
+    font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "MenuSaaS - Premium QR Menus",
+  "description": "Multi-tenant SaaS for restaurant QR menus with premium themes and high-conversion UX.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
