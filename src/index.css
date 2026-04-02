@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Cormorant Garamond", serif;
-  --font-display: "Archivo Black", sans-serif;
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
 @layer base {
@@ -19,7 +20,7 @@
   }
 
   [data-theme='fast-food'] {
-    --primary: #FF4D00; /* Darker, vibrant orange */
+    --primary: #FF4D00;
     --primary-rgb: 255, 77, 0;
     --radius: 8px;
     --bg-base: #050505;
@@ -41,14 +42,31 @@
   }
 
   [data-theme='night'] {
-    --primary: #A855F7; /* Electric Violet */
-    --primary-rgb: 168, 85, 247;
-    --radius: 24px;
-    --bg-base: #020617;
-    --text-base: #F8FAFC;
-    --text-muted: #94A3B8;
-    --card-bg: rgba(30, 41, 59, 0.4);
-    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    --primary: #97a9ff;
+    --primary-rgb: 151, 169, 255;
+    --secondary: #ff51fa;
+    --tertiary: #f3ffca;
+    --radius: 12px;
+    --bg-base: #0e0e0e;
+    --text-base: #ffffff;
+    --text-muted: #adaaaa;
+    --card-bg: #1a1919;
+    --card-shadow: 0 0 20px rgba(151, 169, 255, 0.1);
+  }
+
+  [data-theme='alchemist'] {
+    --primary: #ffe2ab;
+    --primary-container: #ffbf00;
+    --on-primary: #402d00;
+    --secondary: #a1d494;
+    --tertiary: #f6deff;
+    --bg-base: #131313;
+    --text-base: #e5e2e1;
+    --text-muted: #d4c5ab;
+    --card-bg: #1c1b1b;
+    --card-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    --radius: 0.25rem;
+    --outline-variant: #504532;
   }
 
   body {
@@ -56,6 +74,17 @@
     color: var(--text-base);
     font-family: var(--font-sans);
     transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  [data-theme='alchemist'] body {
+    font-family: var(--font-body);
+  }
+
+  [data-theme='alchemist'] h1, 
+  [data-theme='alchemist'] h2, 
+  [data-theme='alchemist'] h3, 
+  [data-theme='alchemist'] h4 {
+    font-family: var(--font-headline);
   }
 }
 
@@ -72,4 +101,14 @@
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.glow-primary { box-shadow: 0 0 20px rgba(151, 169, 255, 0.2); }
+.glow-secondary { box-shadow: 0 0 20px rgba(255, 81, 250, 0.2); }
+.neon-text-primary { text-shadow: 0 0 8px rgba(151, 169, 255, 0.6); }
+.neon-text-tertiary { text-shadow: 0 0 8px rgba(243, 255, 202, 0.6); }
+.neon-text-secondary { text-shadow: 0 0 8px rgba(255, 81, 250, 0.6); }
+
+.amber-glow:hover {
+  box-shadow: 0 0 20px rgba(251, 188, 0, 0.15);
 }

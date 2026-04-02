@@ -1,4 +1,4 @@
-export type ThemeKey = 'standard' | 'fast-food' | 'restaurant' | 'night';
+export type ThemeKey = 'standard' | 'fast-food' | 'restaurant' | 'night' | 'alchemist';
 
 export interface Restaurant {
   id: string;
@@ -10,6 +10,7 @@ export interface Restaurant {
   theme: ThemeKey;
   brandColor: string;
   categories: Category[];
+  featuredItem?: MenuItem; // For the big hero section in Alchemist theme
   contact: {
     address: string;
     phone: string;
@@ -35,6 +36,8 @@ export interface MenuItem {
   image: string;
   allergens: string[];
   addons?: Addon[];
+  abv?: string; // Alcohol by volume for cocktails
+  isRare?: boolean; // For "Rare Reserve" badge
 }
 
 export interface Addon {

@@ -106,9 +106,9 @@ export const MOCK_RESTAURANTS: Record<string, Restaurant> = {
       socials: { instagram: '@lelegance' }
     }
   },
-  'neon-bar': {
+  'neon-nights': {
     id: '3',
-    slug: 'neon-bar',
+    slug: 'neon-nights',
     name: 'Neon Nights',
     description: 'Cocktails & electronic vibes',
     logo: 'https://picsum.photos/seed/bar-logo/200/200',
@@ -125,12 +125,53 @@ export const MOCK_RESTAURANTS: Record<string, Restaurant> = {
             name: 'Electric Mojito',
             description: 'Mint, lime, white rum, and a secret neon twist',
             price: 15.00,
-            image: 'https://picsum.photos/seed/cocktail/400/300',
+            image: 'https://picsum.photos/seed/cocktail1/400/300',
             allergens: [],
             addons: [
               { id: 'a13', name: 'Extra Rum Shot', price: 5.00 },
-              { id: 'a14', name: 'Glow Stick', price: 1.00 },
-              { id: 'a15', name: 'Premium Garnish', price: 2.00 }
+              { id: 'a14', name: 'Glow Stick', price: 1.00 }
+            ]
+          },
+          {
+            id: 'i2',
+            name: 'Cyber Punch',
+            description: 'Vodka, blue curacao, pineapple juice, and edible glitter',
+            price: 18.00,
+            image: 'https://picsum.photos/seed/cocktail2/400/300',
+            allergens: [],
+            addons: [
+              { id: 'a15', name: 'Premium Garnish', price: 2.00 },
+              { id: 'a16', name: 'Dry Ice Effect', price: 3.00 }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'c2',
+        name: 'VIP Packages',
+        items: [
+          {
+            id: 'i3',
+            name: 'The Mezzanine',
+            description: 'Private booth for 4, 1 bottle of premium vodka, mixers',
+            price: 1200.00,
+            image: 'https://picsum.photos/seed/vip1/400/300',
+            allergens: [],
+            addons: [
+              { id: 'a17', name: 'Extra Champagne Bottle', price: 350.00 },
+              { id: 'a18', name: 'Dedicated Host', price: 150.00 }
+            ]
+          },
+          {
+            id: 'i4',
+            name: 'Main Floor VIP',
+            description: 'Front row table for 6, 2 bottles of premium spirits, mixers',
+            price: 2500.00,
+            image: 'https://picsum.photos/seed/vip2/400/300',
+            allergens: [],
+            addons: [
+              { id: 'a19', name: 'Security Guard', price: 200.00 },
+              { id: 'a20', name: 'Sparkler Show', price: 50.00 }
             ]
           }
         ]
@@ -140,6 +181,129 @@ export const MOCK_RESTAURANTS: Record<string, Restaurant> = {
       address: '789 Techno Way, Underground',
       phone: '+1 555 000 111',
       socials: { instagram: '@neonnights' }
+    }
+  },
+  'nocturnal-alchemist': {
+    id: '4',
+    slug: 'nocturnal-alchemist',
+    name: 'The Nocturnal Alchemist',
+    description: 'Spirits & Mixology',
+    logo: 'https://picsum.photos/seed/alchemist-logo/200/200',
+    cover: 'https://picsum.photos/seed/alchemist-cover/1200/400',
+    theme: 'alchemist',
+    brandColor: '#fbbc00',
+    featuredItem: {
+      id: 'f1',
+      name: 'The Gilded Alchemist',
+      description: 'A rare 24-year single malt base infused with saffron-honey reduction, organic bitters, and finished with a citrus smoke cloud.',
+      price: 42.00,
+      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCN_4653eKQyHHlw-B-ncx909pZYq4Wb3jdHIJtis0HwO4p-ES2OfV2T9kDGDWZMep95oVE8siwfUIN7hf2N1aHIxhJ7qzF_TeTjqyI3sNG9TgYzscxhvwoknQZsuG5-4PoCuWUCmL6pPExgStu-xv-tDflx1zXJnT6UNru1U6-AFfAljWkREIpLFraEdQ6_NJ0rP-0WpUVRKizDsPUCLDU6koznr2_VAbBRqPbgVIWBMYCaDgZXpbxDebZ03tdEcTzseqOPB4wFwaK',
+      allergens: []
+    },
+    categories: [
+      {
+        id: 'c1',
+        name: 'Signature Cocktails',
+        items: [
+          {
+            id: 'i1',
+            name: 'Midnight Orchid',
+            description: 'Velvety botanical gin, butterfly pea flower tea, elderflower liqueur, and cold-pressed lime zest.',
+            price: 18.00,
+            image: 'https://picsum.photos/seed/orchid/400/300',
+            abv: '14.2%',
+            allergens: []
+          },
+          {
+            id: 'i2',
+            name: 'Obsidian Old Fashioned',
+            description: 'Double-oaked bourbon, black walnut bitters, and a whisper of activated charcoal agave syrup.',
+            price: 22.00,
+            image: 'https://picsum.photos/seed/obsidian/400/300',
+            abv: '28.5%',
+            allergens: []
+          },
+          {
+            id: 'i3',
+            name: 'Botanical Mist',
+            description: 'Small-batch vodka, cucumber-basil hydrosol, dry vermouth, and a saline solution spritz.',
+            price: 19.00,
+            image: 'https://picsum.photos/seed/mist/400/300',
+            abv: '12.0%',
+            allergens: []
+          }
+        ]
+      },
+      {
+        id: 'c2',
+        name: 'Aged Spirits',
+        items: [
+          {
+            id: 'i4',
+            name: 'Macallan M',
+            description: 'Decadent notes of raisin and ginger with a long, wood-smoke finish. Aged in select sherry oak casks.',
+            price: 325.00,
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAjAcj8Ce3CDKOQCNtPNv-Wm16dnAY3AYgnZrOeFdYDcDgdrJlPiMxcv65QoJgsxPs6ynoB2b_Et2LYNElud0rr71xlMCL4wrHKLmb9FFyqeGWu4OJo7Mxn1AR0Ie8y5AHuYCGdtj-1PdeYE3ITVeEL0tusegNO_EUl3kneDDgo0FAkiiF6arhwCAf47amuA3ROUAFOFdIGZBbuyekUNCRCnzgU3Q855ptmJxSKx248m5t0AafXgOMJQzu1mYWhAu96UzYZzL-mk4dt',
+            abv: '45%',
+            isRare: true,
+            allergens: []
+          },
+          {
+            id: 'i5',
+            name: 'Clase Azul Añejo',
+            description: 'Viscous and rich with notes of Mexican vanilla, cinnamon, and toasted oak.',
+            price: 95.00,
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAkm3SdfKdAOa1Q-PjD9ncZMg3SeXEA6jzlOaRq6C3tfKlJ5WfwWD3Rmqt0ZkXEJKThxbeq-GprfuEnBU7lxDxZ7hBTv-4SQiKMeU2wIsoXWjUGdMufJsuwJFa9SIcYgIz7fEIWdn6Uu35rHcBSfXQrgDGArVWeycemJQ_V3TfEMbXMnUcNJe73TNp416DAWxwRpcA2-VvzEcDN-tJhqe2KJdZIQfgpuSh9J2g4DZrz6NvrOMJpTm6nUSUcBq2_wHNINKm1dfdmvvp9',
+            abv: '40%',
+            allergens: []
+          },
+          {
+            id: 'i6',
+            name: 'Nikka From The Barrel',
+            description: 'Intense, floral and spicy Japanese blend.',
+            price: 18.00,
+            image: 'https://picsum.photos/seed/nikka/400/300',
+            abv: '51.4%',
+            allergens: []
+          },
+          {
+            id: 'i7',
+            name: 'Zacapa Centenario 23',
+            description: 'Guatemalan rum aged at high altitude.',
+            price: 16.00,
+            image: 'https://picsum.photos/seed/zacapa/400/300',
+            abv: '40.0%',
+            allergens: []
+          }
+        ]
+      },
+      {
+        id: 'c3',
+        name: 'Light Bites',
+        items: [
+          {
+            id: 'i8',
+            name: 'Black Truffle Almonds',
+            description: 'Slow-roasted Marcona almonds infused with Umbrian truffle oil and sea salt.',
+            price: 12.00,
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDesmx9Z7HOncrZXMRE3hJK9G6fn5kzMXK4KAuvg-mxdw8AOC9i1OP09UoV4mBFCWkF2Xiaz8PyQXayB4DUp1mAtH8KXYZ62XLWZvQkAtMG8Z5dActddFtkeKsR4PMqtci5rz5geHESsrbYrFNYBOYk4T9SFSeF1zjZjsBFj6bNRmYFW3I3wbcCyQYCOlbcFLaDQupAoubVu2wAYo4nnuizioXpk6ueIUKHRd7PP9pRLqoCWBN5BousV3WIE9LF9VCeHrhV9CvUQXrQ',
+            allergens: []
+          },
+          {
+            id: 'i9',
+            name: 'Alchemy Cheese Plate',
+            description: 'A curated trio of reserve cheeses served with honeycomb and charcoal crackers.',
+            price: 28.00,
+            image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDc9NbZUbixFLEDg4N19zE6kaYsLmHuQ3kXDiIMF4eshB8WRdNJ0P0e2D2pbkILTR5HkImOpHuNLHplYAUUTRks4F-HVIUoASzqQ_KSM9n9ok8B14LDtfm6d4tHRfKvFMRAP3BTD9K5fkgFTNdrMB3xlExH02YgOc1dNMeZGQG3vJoQoEweL7TN-aFoTB4HbFvdLK-oTZldYFZV-uuzTizQn3-GrP26oG7FkIK3ZOxlkzped8aMU8tXkfSo2AB2Nu-S9kcCqsWsAo_O',
+            allergens: ['Dairy']
+          }
+        ]
+      }
+    ],
+    contact: {
+      address: '789 Alchemist Way, Nocturnal District',
+      phone: '+1 555 999 888',
+      socials: { instagram: '@nocturnalalchemist' }
     }
   }
 };
